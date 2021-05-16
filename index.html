@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>TO-DO List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
 </head>
+
 <body>
-    <div class="container">
-        <div>
-            <h2><span>TO-DO</span> List</h2>
-            <div>
-            <input id="inputField" type="text" placeholder="Enter what you want" value="" >
-            <button id="submit-btn" type="submit">Submit</button>
-            <button id="reset-btn" type="reset">Clear List</button>
+    <main>
+        <div class="container blur">
+            <h1>ToDo Container</h1>
+            <div class="input-Box">
+                <input type="text" class="inputField" placeholder="enter your ToDo">
+                <span class="submit">+</span>
+            </div>
+
+            <!-- Storage -->
+
+            <div class="msg-container">
+                <div class="msges">
+                    <!-- <div class="mini-container">
+                        <input disabled type="text" class="msg">
+                        <div class="icon">
+                            <i class="fa fa-pencil edit"></i>
+                            <i class="fa fa-trash-o trash"></i>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </div>
-        <br>
-        <hr>
-        <br>
-    </div>
-    
-    <script src="main.js"></script>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
